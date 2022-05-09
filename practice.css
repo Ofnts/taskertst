@@ -1,0 +1,255 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #fff;
+}
+h3 {
+	color: limegreen;
+}
+span {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	top: 1em;
+	color: tomato;
+}
+input:focus {
+	outline: none;
+}
+#out {
+	margin: 2px 0;
+	overflow-wrap: break-word;
+}
+#out div{
+	display: flex;
+}
+#out img {
+	cursor: pointer;
+	height: 2em;
+	width: 2em;
+}
+#out input {
+	height: 3em;
+	width: 2em;
+}
+#out li img {
+	height: 1.8em;
+	width: 1.8em;
+}
+#out li{
+	border-left: 4px solid #FF00FF;
+	list-style: none;
+	margin: 3px;
+	padding: 5px;
+	background: rgba(255, 255, 255, 0.2);
+	width: 80vh;
+	overflow-wrap: break-word;
+}
+#out li p {
+	color: cadetblue;
+	font-style: italic;
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+}
+#out li:hover {
+	cursor: pointer;
+	transform: translateY(5px) translateZ(150px);
+	font-size: 17px;
+	background: rgba(0, 0, 210, 0.2);
+	transition: ease all 0.5s; 
+}
+.im {
+	background-image: url("photo.jpeg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.main {
+	background: hsla(250, 60%, 40%, 0.1);
+	height: 98vh;
+	padding: 1.2em;
+}
+.section {
+	text-align: center;
+}
+.out {
+	border-top: 2px solid limegreen;
+	border-bottom: 2px solid limegreen;
+	height: 18em;
+	width: 100vh;
+	margin-left: 2em;
+	overflow-y: auto;
+}
+.tasker {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: limegreen;
+	margin-top: 1em;
+}
+.in {
+	color: #fff;
+	margin-left: 1em;
+	width: 20em;
+	border: transparent;
+	border-bottom: 2px solid #fff;
+	background: transparent;
+	font-size: 14px;
+}
+.buttons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.add {
+	margin: 2em 0 0 1em;
+	width: 15em;
+	border-color: limegreen;
+	border-radius: 12px;
+	background: limegreen;
+	cursor: pointer;
+}
+.del {
+	margin: 2em 0 0 1em;
+	width: 15em;
+	border-color: red;
+	border-radius: 12px;
+	background: red;
+	cursor: pointer;
+}
+.footer {
+	width: 40vw;
+	text-align: center;
+	overflow-wrap: break-word;
+	margin: 0 auto;
+}
+
+/* Small media Screen --------------------------------------*/
+
+@media screen and (max-width: 700px){
+	body {
+	margin: 0;
+	box-sizing: border-box;
+	color: #fff;
+}
+h3 {
+	color: limegreen;
+}
+label { 
+	display: none;
+ }
+input:focus {
+	outline: none;
+}
+#out {
+	margin: 2px 0;
+	overflow-wrap: break-word;
+}
+#out div{
+	display: flex;
+}
+#out img {
+	cursor: pointer;
+	height: 2em;
+	width: 2em;
+}
+#out input {
+	height: 2em;
+	width: 2em;
+}
+#out li img {
+	height: 1.8em;
+	width: 1.8em;
+}
+#out li{
+	border-left: 3px solid #FF00FF;
+	list-style: none;
+	margin: 3px;
+	padding: 0.5em;
+	background: rgba(0, 0, 200, 0.2);
+	width: 60vh;
+	overflow-wrap: break-word;
+}
+#out li:hover {
+	color: #000;
+	cursor: pointer;
+	transform: translateY(7px);
+	font-size: 17px;
+	background: #FFDDA0DD;
+	transition: ease all 0.4s; 
+}
+.im {
+	background-image: url("photo.jpeg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.container {
+	background: rgba(0, 0, 0, 0.5);
+	height: 100%;
+}
+.main {
+	margin: 0;
+	padding: 6em;
+}
+.section {
+	text-align: center;
+}
+.out {
+	border-top: 2px solid limegreen;
+	border-bottom: 2px solid limegreen;
+	height: 18em;
+	width: 90vh;
+	overflow-y: auto;
+}
+.tasker {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: limegreen;
+	margin-top: 1em;
+}
+.in {
+	color: #fff;
+	width: 20em;
+	border: transparent;
+	border-bottom: 2px solid #fff;
+	background: transparent;
+	font-size: 14px;
+}
+.buttons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.add{
+	margin: 12px;
+	width: 15em;
+	border-color: limegreen;
+	border-radius: 12px;
+	background: limegreen;
+}
+.del {
+	margin: 2em 0 0 1em;
+	width: 15em;
+	border-color: red;
+	border-radius: 12px;
+	background: red;
+	cursor: pointer;
+}
+.footer {
+	width: 70vw;
+	text-align: center;
+	overflow-wrap: break-word;
+	margin: 0 auto;
+}
+}
