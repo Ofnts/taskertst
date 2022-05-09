@@ -85,7 +85,7 @@ input:focus {
 	border-top: 2px solid limegreen;
 	border-bottom: 2px solid limegreen;
 	height: 18em;
-	width: 100vh;
+	width: auto;
 	margin-left: 2em;
 	overflow-y: auto;
 }
@@ -135,7 +135,7 @@ input:focus {
 
 /* Small media Screen --------------------------------------*/
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 340px){
 	body {
 	margin: 0;
 	box-sizing: border-box;
@@ -233,14 +233,14 @@ input:focus {
 }
 .add{
 	margin: 12px;
-	width: 15em;
+	width: 5em;
 	border-color: limegreen;
 	border-radius: 12px;
 	background: limegreen;
 }
 .del {
 	margin: 2em 0 0 1em;
-	width: 15em;
+	width: 5em;
 	border-color: red;
 	border-radius: 12px;
 	background: red;
