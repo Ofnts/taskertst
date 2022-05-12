@@ -75,7 +75,8 @@ input:focus {
 }
 .main {
 	background: hsla(250, 60%, 40%, 0.1);
-	height: 98vh;
+	height: 100%;
+        width: 100%;
 	padding: 1.2em;
 }
 .section {
@@ -85,7 +86,7 @@ input:focus {
 	border-top: 2px solid limegreen;
 	border-bottom: 2px solid limegreen;
 	height: 18em;
-	width: auto;
+	width: 80%;
 	margin-left: 2em;
 	overflow-y: auto;
 }
@@ -135,7 +136,7 @@ input:focus {
 
 /* Small media Screen --------------------------------------*/
 
-@media screen and (max-width: 340px){
+@media screen and (max-width: 920px){
 	body {
 	margin: 0;
 	box-sizing: border-box;
