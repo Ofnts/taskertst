@@ -177,7 +177,7 @@ input:focus {
 	margin: 3px;
 	padding: 0.5em;
 	background: rgba(0, 0, 200, 0.2);
-	width: 60vh;
+	width: 30vh;
 	overflow-wrap: break-word;
 }
 #out li:hover {
@@ -187,16 +187,6 @@ input:focus {
 	font-size: 17px;
 	background: #FFDDA0DD;
 	transition: ease all 0.4s; 
-}
-.im {
-	background-image: url("photo.jpeg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-.container {
-	background: rgba(0, 0, 0, 0.5);
-	height: 100%;
 }
 .main {
 	margin: 0;
@@ -234,14 +224,14 @@ input:focus {
 }
 .add{
 	margin: 12px;
-	width: 5em;
+	width: 2em;
 	border-color: limegreen;
 	border-radius: 12px;
 	background: limegreen;
 }
 .del {
 	margin: 2em 0 0 1em;
-	width: 5em;
+	width: 2em;
 	border-color: red;
 	border-radius: 12px;
 	background: red;
