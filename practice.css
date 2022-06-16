@@ -3,6 +3,8 @@ body {
 	padding: 0;
 	box-sizing: border-box;
 	color: #fff;
+	font-style: normal;
+	font-family: sans-serif;
 }
 h3 {
 	color: lime;
@@ -19,24 +21,21 @@ input:focus {
 }
 #out {
 	margin: 2px 0;
+	padding: 0;
 	overflow-wrap: break-word;
 }
 #out div{
 	display: flex;
-}
-#out img {
-	cursor: pointer;
-	height: 2em;
-	width: 2em;
 }
 input[type="checkbox"]{
 	margin: 5px 1em;
 	height: 2em;
 	width: 2em;
 }
-#out li img {
-	height: 1.8em;
-	width: 1.8em;
+#out img {
+	cursor: pointer;
+	height: 2em;
+	width: 2em;
 }
 #out li{
 	border-left: 4px solid yellow;
@@ -150,6 +149,7 @@ input[type="checkbox"]{
 	}
 	#out {
 		margin: 2px 0;
+		padding: 0;
 		overflow-wrap: break-word;
 	}
 	#out div{
@@ -163,10 +163,6 @@ input[type="checkbox"]{
 	#out input[type="checkbox"]{
 		height: 2em;
 		width: 2em;
-	}
-	#out li img {
-		height: 1.8em;
-		width: 1.8em;
 	}
 	#out li{
 		border-left: 4px solid #FF00FF;

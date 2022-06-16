@@ -61,11 +61,6 @@ function manageInputField(){
 		}
 	}
 
-(function(){
-	let store = []
-	let saved = localStorage.setItem("saved", JSON.stringify(list.textContent))
-	store += saved
-})();
 //--------------------Load Function------Delete using Bin
 
 	bin.onclick = () => {data.removeChild(container)}
