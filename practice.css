@@ -5,14 +5,13 @@ body {
 	color: #fff;
 }
 h3 {
-	color: limegreen;
+	color: lime;
 }
 span {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	top: 1em;
 	color: tomato;
 }
 input:focus {
@@ -30,8 +29,9 @@ input:focus {
 	height: 2em;
 	width: 2em;
 }
-#out input {
-	height: 3em;
+input[type="checkbox"]{
+	margin: 5px 1em;
+	height: 2em;
 	width: 2em;
 }
 #out li img {
@@ -39,17 +39,15 @@ input:focus {
 	width: 1.8em;
 }
 #out li{
-	border-left: 4px solid #FF00FF;
+	border-left: 4px solid yellow;
 	list-style: none;
 	margin: 3px;
 	padding: 5px;
-	background: rgba(255, 255, 255, 0.2);
-	width: 80vh;
+	width: 100%;
 	overflow-wrap: break-word;
 }
 #out li p {
-	color: cadetblue;
-	font-style: italic;
+	color: gold;
 	font-size: 12px;
 	margin: 0;
 	padding: 0;
@@ -58,7 +56,6 @@ input:focus {
 	cursor: pointer;
 	transform: translateY(5px) translateZ(150px);
 	font-size: 17px;
-	background: rgba(0, 0, 210, 0.2);
 	transition: ease all 0.5s; 
 }
 .im {
@@ -67,34 +64,29 @@ input:focus {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.container {
-	display: flex;
+.main {
+	height: 100vh;
+    width: 100%;
+    display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-}
-.main {
-	background: hsla(250, 60%, 40%, 0.1);
-	height: 100%;
-        width: 100%;
-	padding: 1.2em;
 }
 .section {
 	text-align: center;
 }
 .out {
-	border-top: 2px solid limegreen;
-	border-bottom: 2px solid limegreen;
+	border-top: 2px solid lime;
+	border-bottom: 2px solid lime;
 	height: 18em;
-	width: 80%;
-	margin-left: 2em;
+	width: 70%;
 	overflow-y: auto;
 }
 .tasker {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	color: limegreen;
+	color: orangered;
 	margin-top: 1em;
 }
 .in {
@@ -114,9 +106,9 @@ input:focus {
 .add {
 	margin: 2em 0 0 1em;
 	width: 15em;
-	border-color: limegreen;
+	border-color: lime;
 	border-radius: 12px;
-	background: limegreen;
+	background: lime;
 	cursor: pointer;
 }
 .del {
@@ -138,138 +130,130 @@ input:focus {
 
 @media screen and (max-width: 920px){
 	body {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	color: #fff;
-}
-h3 {
-	color: limegreen;
-}
-span {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	top: 1em;
-	color: tomato;
-}
-input:focus {
-	outline: none;
-}
-#out {
-	margin: 2px 0;
-	overflow-wrap: break-word;
-}
-#out div{
-	display: flex;
-}
-#out img {
-	cursor: pointer;
-	height: 2em;
-	width: 2em;
-}
-#out input {
-	height: 3em;
-	width: 2em;
-}
-#out li img {
-	height: 1.8em;
-	width: 1.8em;
-}
-#out li{
-	border-left: 4px solid #FF00FF;
-	list-style: none;
-	margin: 3px;
-	padding: 5px;
-	background: rgba(255, 255, 255, 0.2);
-	width: 80vh;
-	overflow-wrap: break-word;
-}
-#out li p {
-	color: cadetblue;
-	font-style: italic;
-	font-size: 12px;
-	margin: 0;
-	padding: 0;
-}
-#out li:hover {
-	cursor: pointer;
-	transform: translateY(5px) translateZ(150px);
-	font-size: 17px;
-	background: rgba(0, 0, 210, 0.2);
-	transition: ease all 0.5s; 
-}
-.im {
-	background-image: url("photo.jpeg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-.container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-}
-.main {
-	background: hsla(250, 60%, 40%, 0.1);
-	height: 100%;
-        width: 100%;
-	padding: 1.2em;
-}
-.section {
-	text-align: center;
-}
-.out {
-	border-top: 2px solid limegreen;
-	border-bottom: 2px solid limegreen;
-	height: 18em;
-	width: 80%;
-	margin-left: 2em;
-	overflow-y: auto;
-}
-.tasker {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: limegreen;
-	margin-top: 1em;
-}
-.in {
-	color: #fff;
-	margin-left: 1em;
-	width: 20em;
-	border: transparent;
-	border-bottom: 2px solid #fff;
-	background: transparent;
-	font-size: 14px;
-}
-.buttons {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.add {
-	margin: 2em 0 0 1em;
-	width: 15em;
-	border-color: limegreen;
-	border-radius: 12px;
-	background: limegreen;
-	cursor: pointer;
-}
-.del {
-	margin: 2em 0 0 1em;
-	width: 15em;
-	border-color: red;
-	border-radius: 12px;
-	background: red;
-	cursor: pointer;
-}
-.footer {
-	width: 40vw;
-	text-align: center;
-	overflow-wrap: break-word;
-	margin: 0 auto;
-}
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		color: #fff;
+	}
+	h3 {
+		color: lime;
+	}
+	span {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		color: tomato;
+	}
+	input:focus {
+		outline: none;
+	}
+	#out {
+		margin: 2px 0;
+		overflow-wrap: break-word;
+	}
+	#out div{
+		display: flex;
+	}
+	#out img {
+		cursor: pointer;
+		height: 2em;
+		width: 2em;
+	}
+	#out input[type="checkbox"]{
+		height: 2em;
+		width: 2em;
+	}
+	#out li img {
+		height: 1.8em;
+		width: 1.8em;
+	}
+	#out li{
+		border-left: 4px solid #FF00FF;
+		list-style: none;
+		margin: 3px;
+		padding: 5px;
+		width: 90%;
+		overflow-wrap: break-word;
+	}
+	#out li p {
+		color: gold;
+		font-size: 12px;
+		margin: 0;
+		padding: 0;
+	}
+	#out li:hover {
+		cursor: pointer;
+		transform: translateY(5px) translateZ(150px);
+		font-size: 17px;
+		background: rgba(0, 0, 210, 0.2);
+		transition: ease all 0.5s; 
+	}
+	.im {
+		background-image: url("photo.jpeg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.main {
+		height: 100vh;
+	    width: 100%;
+	    display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	.section {
+		text-align: center;
+	}
+	.out {
+		border-top: 2px solid lime;
+		border-bottom: 2px solid lime;
+		height: 18em;
+		width: 70%;
+		overflow-y: auto;
+	}
+	.tasker {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: orangered;
+		margin-top: 1em;
+	}
+	.in {
+		color: #fff;
+		margin-left: 1em;
+		width: 15em;
+		border: transparent;
+		border-bottom: 2px solid #fff;
+		background: transparent;
+		font-size: 14px;
+	}
+	.buttons {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.add {
+		margin: 2em 0 0 1em;
+		border-color: lime;
+		border-radius: 12px;
+		background: lime;
+		width: 10em;
+		cursor: pointer;
+	}
+	.del {
+		margin: 2em 0 0 1em;
+		border-color: red;
+		border-radius: 12px;
+		background: red;
+		width: 10em;
+		cursor: pointer;
+	}
+	.footer {
+		width: 40vw;
+		text-align: center;
+		overflow-wrap: break-word;
+		margin: 0 auto;
+	}
 }

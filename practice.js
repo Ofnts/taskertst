@@ -16,7 +16,16 @@ function createElements(e){
 	const done = document.createElement('img')
 	const container = document.createElement('div')
 	done.setAttribute("src", "./ok.svg")
-	time.textContent = "created " + new Date()
+	let date = new Date()
+	let Hours = date.getHours()
+	let Minutes = date.getMinutes()
+	let Seconds = date.getSeconds()
+	let Year = date.getFullYear()
+	let Month = date.getDate()
+	let Day = date.getDay()
+	time.textContent = "created "+
+	"("+Year+"-"+Month+"-"+Day+") "+"@ "+
+	+Hours+ ":" +Minutes+ ":" +Seconds 
 	time.append(done)
 	list.textContent = e
 	list.append(time)
@@ -32,7 +41,7 @@ function createElements(e){
 	container.querySelectorAll(".save")
 	input.value = ""
 
-//--------------------Check to highlight when functions are completed----------------------
+//--------------------Check to highlight when tasks are completed----------------------
 
 function completedtask(){
 	container.onchange = function(d){
@@ -45,30 +54,30 @@ function completedtask(){
 		}
 	}
 }
-
 function manageInputField(){
 	if(e == ""){
 		data.removeChild(container)
-		alert("Write somethng")
+		alert("Input Empty")
 		}
 	}
 
-
-//------------------Save Elements to the localStorage----Load Function------Delete using Bin
+(function(){
+	let store = []
+	let saved = localStorage.setItem("saved", JSON.stringify(list.textContent))
+	store += saved
+})();
+//--------------------Load Function------Delete using Bin
 
 	bin.onclick = () => {data.removeChild(container)}
 	completedtask()
 	manageInputField()
-
 }
+
 //---------------------------------------Add Events to the window----------------------------
-
-
 function addToScreen(){
 	add.addEventListener('click', createElements)
 	input.addEventListener('keypress', function(){
-		if(event.key === "Enter"){createElements()} 
-	})
+		if(event.key === "Enter"){createElements()}})
 }
 addToScreen()
 
