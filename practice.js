@@ -50,7 +50,7 @@ function completedtask(){
 			list.style.color = "red"
 		}else{
 			list.style.textDecoration = "none"
-			list.style.color = "white"
+			//list.style.color = "white"
 		}
 	}
 }
@@ -68,12 +68,19 @@ function manageInputField(){
 	manageInputField()
 }
 
+	
 //---------------------------------------Add Events to the window----------------------------
 function addToScreen(){
 	add.addEventListener('click', createElements)
 	input.addEventListener('keypress', function(){
 		if(event.key === "Enter"){createElements()}})
 }
+function removeFromScreen(){
+	del.addEventListener('click', function(){
+		createElements.container !== null ? container==[] : throw new Error("Something went wrong");
+	})
+}
 addToScreen()
+removeFromScreen()
 
 
